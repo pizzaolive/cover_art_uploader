@@ -10,20 +10,22 @@ If there are multiple albums with different file versions, or multiple *Disk* fo
 
 ## Prerequisites
 * You must have Python installed: https://www.python.org/downloads/windows/
-* You must have an account with https://imgbb.com/ in order to get an API key and upload images
+* You must have an account with https://imgbb.com/ in order to get an API key and upload images.
 
 ## Setting up the script
 
-1. Git clone the script, or download the repository to wherever you like.
-2. Update the values in [parameters.py](cover_art_uploader\parameters.py). 
+1. Git clone the respository, or download it as ZIP and extract it to wherever you like.
+2. Update the values in [parameters.py](cover_art_uploader\parameters.py). You can right click the file and open with Notepad to edit it.
     * IMGBB_API_KEY: Your API key from https://imgbb.com/
         * Log in to your account, click *About* in the top left, then *API*.
         * If there is no key, click *Add API key*, then copy this.
     * INPUT_FOLDER: the parent directory that contains albums.
     * OUTPUT_FOLDER: the directory in which the output csv file containing the upload URLs should be saved.
-    * OUTPUT_IMAGE_SIZE: optional, as the default is already set to 750x750
+    * OUTPUT_IMAGE_SIZE: changing this is optional, as the default is already set to 750x750.
 
 ## Running the script
-1. Navigate into the folder: either use a terminal to CD into the folder, or open the folder in Windows explorer -> select the address bar -> type cmd
-2. Type `pip install .` - this should use setup and install the modules required (pandas, Pillow and mutagen)
-2. Type `python -m cover_art_uploader.find_and_upload_cover_art`
+1. Navigate into the root folder. You should be able to see the README and setup files.
+2. Open the terminal in the current folder. You can do this by clicking the directory bar at the top, typing in 'cmd', and pressing Enter.
+3. Type `pip install .` into the terminal and press Enter - this should use setup.py and install the modules required (pandas, Pillow, mutagen and requests).
+4. Once the modules have finished installing, type `python -m cover_art_uploader.find_and_upload_cover_art` and press Enter.
+5. Open the output csv file to find the uploaded image URLs.
