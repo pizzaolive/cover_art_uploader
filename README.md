@@ -14,7 +14,7 @@ If there are multiple albums with different file versions, or multiple *Disk* fo
 
 ## Setting up the script
 
-1. Git clone the respository, or download it as ZIP and extract it to wherever you like.
+1. Git clone the respository, or download it as ZIP (click the green Code button -> Download ZIP) and extract it to wherever you like.
 2. Update the values in [parameters.py](cover_art_uploader\parameters.py). You can right click the file and open with Notepad to edit it.
     * IMGBB_API_KEY: Your API key from https://imgbb.com/
         * Log in to your account, click *About* in the top left, then *API*.
