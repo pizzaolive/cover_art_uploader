@@ -6,5 +6,5 @@ setup(
    description='Upload "cover" images found within directory to imgbb',
    author='pizzaolive',
    packages=['cover_art_uploader'], 
-   install_requires=["pandas","Pillow","mutagen"],
+   install_requires=["pandas","Pillow","mutagen","requests"],
 )
