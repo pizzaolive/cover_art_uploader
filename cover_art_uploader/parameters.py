@@ -1,4 +1,4 @@
 IMGBB_API_KEY = "XXXXXXXXXXXXXXX"
-INPUT_FOLDER = "C:\Data\Media\Music"
-OUTPUT_FOLDER = "C:\Data\Media\Music"
+INPUT_FOLDER = "C:\User\Music" # value should not end with a backslash
+OUTPUT_FOLDER = "C:\User\Music" # value should not end with a backslash
 OUTPUT_IMAGE_SIZE = (750, 750)
