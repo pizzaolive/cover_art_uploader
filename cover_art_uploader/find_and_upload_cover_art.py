@@ -103,7 +103,7 @@ def upload_image(resized_image, api_key):
         response.raise_for_status()
     except requests.exceptions.RequestException as e:
         logging.exception("POST request failed, skipping image: %s", e)
-        return f"Post request failed due: {response}"
+        return f"Post request failed: {response}"
 
     response_json = response.json()
     uploaded_image_url = response_json["data"]["url"]
